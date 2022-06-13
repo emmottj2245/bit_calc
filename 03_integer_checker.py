@@ -1,10 +1,10 @@
 # check input is a number more than a given value
 def num_check (question, low):
-
     valid = False
     while not valid:
 
-        error = "please enter an integer that is more than (or equal to) {}".format(low)
+        error = "please enter an integer that is more than"
+        "(or equal to) {}".format(low)
 
         try:
             
@@ -12,7 +12,7 @@ def num_check (question, low):
             response = int(input(question))
             
             # check number is more than zero
-            if response > low:
+            if response >= low:
                 return response
             
             #outputs error if input is invalid
@@ -22,6 +22,7 @@ def num_check (question, low):
 
         except ValueError:
             print(error)
+
 
 # main routine goes here 
 
