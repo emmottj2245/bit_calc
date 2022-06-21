@@ -167,12 +167,10 @@ while keep_going == "":
    elif data_type == "image":
        image_bits()
 
-       print()
-       image_height = num_check("image height? ", 1)
 
     # for text, ask for a string
    else:
-        text_bits
+        text_bits()
 
    print()
    keep_going = input("press <enter> to continue or any key to quit")
